@@ -12,7 +12,6 @@ import com.example.apitest.model.ApiModel;
 import com.example.apitest.service.ApiService;
 
 @RestController
-@RequestMapping("apitest")
 public class ApiController {
 
     @Autowired
@@ -20,10 +19,10 @@ public class ApiController {
 
     // @GetMapping("/findAll")
     // public Object findAll() {
-    //     return apiservice.findAll();
+    // return apiservice.findAll();
     // }
 
-    @PostMapping("/gentoken ")
+    @PostMapping("apitest/gentoken")
     public String insert(@RequestBody ApiModel apiModel) {
         return apiservice.insert(apiModel);
     }
